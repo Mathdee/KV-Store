@@ -62,6 +62,15 @@ I followed the strict **Raft Safety Properties** to ensure the database is never
 * **Latency:** 99% of requests finish in under 26ms.
 * **Capacity:** Tested consistently with 2+ million records.
 
+
+---
+## 5. Deployment Architecture
+
+* **Cloud Provider:** DigitalOcean (Basic Droplet, 1GB RAM).
+* **Reverse Proxy:** Nginx (Handles SSL termination & routing).
+* **Process Manager:** Systemd (Ensures nodes restart if they crash).
+
+![Deployment](deployment.png)
 ---
 *Resources:* https://raft.github.io/raft.pdf
 
