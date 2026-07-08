@@ -1,0 +1,15 @@
+# WAL / server data files (generated at runtime)
+*.log
+
+# Go build artifacts
+*.exe
+*.test
+*.out
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
